@@ -1,9 +1,9 @@
 package fr.deroffal.aoc_2022
 
-import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Day01KtTest {
+class Day01Test {
 
     private val input = """1000
 2000
@@ -25,12 +25,12 @@ class Day01KtTest {
     @Test
     fun part1() {
         val part1 = day01.part1()
-        Assertions.assertEquals(24_000, part1)
+        assertEquals(24_000, part1)
     }
 
     @Test
     fun part2() {
         val part2 = day01.part2()
-        Assertions.assertEquals(45_000, part2)
+        assertEquals(45_000, part2)
     }
 }
