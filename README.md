@@ -16,3 +16,4 @@
 | 4   | Camp Cleanup            | [Code](src/main/kotlin/fr/deroffal/aoc_2022/Day04.kt) - [AoC](https://adventofcode.com/2022/day/4) |
 | 5   | Supply Stacks           | [Code](src/main/kotlin/fr/deroffal/aoc_2022/Day05.kt) - [AoC](https://adventofcode.com/2022/day/5) |
 | 6   | Tuning Trouble          | [Code](src/main/kotlin/fr/deroffal/aoc_2022/Day06.kt) - [AoC](https://adventofcode.com/2022/day/6) |
+| 7   | No Space Left On Device | [Code](src/main/kotlin/fr/deroffal/aoc_2022/Day07.kt) - [AoC](https://adventofcode.com/2022/day/7) |
