@@ -7,7 +7,7 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 
 class Day09Test {
-    private val input = listOf(
+    private val input1 = listOf(
         "R 4",
         "U 4",
         "L 3",
@@ -17,10 +17,12 @@ class Day09Test {
         "L 5",
         "R 2"
     )
-    private val day09 = Day09(input)
+    private val day09Part1 = Day09(input1)
 
     @Test
-    fun part1() = assertEquals(13, day09.part1())
+    fun part1() = assertEquals(13, day09Part1.part1())
+    @Test
+    fun part2_simpleInput() = assertEquals(1, day09Part1.part2())
 
     @Test
     fun getNewHeadPosition() {
@@ -80,5 +82,29 @@ class Day09Test {
 
         assertEquals(Position(1, 3), tail.getNewTailPosition(head))
     }
+
+    private val realDay09 = Day09(getFileContentAsList("day09.txt"))
+
+    @Test
+    fun day09() {
+        assertEquals(6209, realDay09.part1())
+        assertEquals(2460, realDay09.part2())
+    }
+
+    private val inputPart2 = listOf(
+                "R 5",
+                "U 8",
+                "L 8",
+                "D 3",
+                "R 17",
+                "D 10",
+                "L 25",
+                "U 20"
+    )
+
+    private val day09Part2 = Day09(inputPart2)
+
+    @Test
+    fun part2() = assertEquals(36, day09Part2.part2(Position(11 ,5)))
 }
 
